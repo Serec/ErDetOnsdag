@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Vil du vide om det er onsdag? <a href="/onsdag">Ja</a><a href="/ikkeonsdag">/Nej</a></h1>
+    <br />
+    
+
+</div>
+<p id="demo">JavaScript can change HTML content.</p>
+<button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+    Click Me!
+</button>
+<button type="button"
+        onclick="document.getElementById('demo').innerHTML = 'IP = '+ myip">
+    Show ip!
+</button>
+
+<script type="text/javascript" src="http://l2.io/ip.js?var=myip"></script>
